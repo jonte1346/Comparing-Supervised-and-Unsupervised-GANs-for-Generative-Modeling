@@ -19,4 +19,4 @@ semantic results. The findings reveal distinct
 strengths and limitations of each model in
 architectural image synthesis.
 
-Paper can be found at JonathanBicem_YalıHouses_Supervised_and_Unsupervised_Learning_final_compressed.pdf
+Paper can be found at YalıHouses_Supervised_and_Unsupervised_Learning.pdf
