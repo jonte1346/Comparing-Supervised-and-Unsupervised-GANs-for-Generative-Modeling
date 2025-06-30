@@ -1,9 +1,8 @@
-
-# YalıGAN: Generating Ottoman Waterfront Architecture with GANs and Diffusion
-
+Paper can be found at <em>YalıHouses_Supervised_and_Unsupervised_Learning.pdf</em>
+# Generating Ottoman Waterfront Architecture with GANs and Diffusion
 This project explores generative modeling for architectural heritage, focusing on Istanbul’s historic **Yalı houses**. Using a combination of supervised, unsupervised, and fine-tuned diffusion models, we aim to generate high-quality façade imagery that reflects the stylistic features of traditional Ottoman waterfront architecture.
 
-## 📂 Project Structure
+## Project Structure
 
 - **Pix2Pix / Pix2PixHD** (Supervised GANs)
 - **Wasserstein SAGAN-GP** (Unsupervised GAN)
@@ -11,7 +10,7 @@ This project explores generative modeling for architectural heritage, focusing o
 - **Evaluation Metrics**: SSIM, FID, Inception Score, CLIP Score
 - **Preprocessing**: Background removal, augmentation, mask generation
 
-## 📊 Evaluation Summary
+## Evaluation Summary
 
 | Model                          | FID     | Inception Score | CLIP Score | SSIM    |
 |-------------------------------|---------|------------------|------------|---------|
@@ -19,7 +18,7 @@ This project explores generative modeling for architectural heritage, focusing o
 | SAGAN-WGAN-GP (Unsupervised)  | 306.28  | 2.93 ± 0.21      | 0.2270     | -       |
 | Stable Diffusion (Fine-Tuned) | 210.18  | 1.36 ± 0.06      | 0.2485     | -       |
 
-## 🧠 Technologies Used
+## Technologies Used
 
 - PyTorch
 - torchvision / torchmetrics
@@ -28,7 +27,7 @@ This project explores generative modeling for architectural heritage, focusing o
 - rembg / U-2-Net
 - Stable Diffusion + LoRA (fine-tuning)
 
-## 🛠️ How to Run
+## How to Run
 
 1. Clone the repository and open in Google Colab or local Jupyter environment.
 2. Prepare the dataset: background removal, resizing, and augmentation.
@@ -36,17 +35,17 @@ This project explores generative modeling for architectural heritage, focusing o
 4. Evaluate performance with provided metrics (FID, SSIM, CLIP).
 5. Compare generated outputs and save best checkpoints.
 
-## 📁 Dataset
+## Dataset
 
 - 538 manually curated façade images of Yalı houses.
 - Augmented to 1,646 samples.
 - Binary masks generated via SAM for supervised models.
 
-## 🎯 Objective
+## Objective
 
 To compare the performance of supervised (Pix2Pix), unsupervised (W-SAGAN-GP), and fine-tuned (Stable Diffusion) models on generating semantically and structurally accurate architectural imagery.
 
-## 📄 Authors
+## Authors
 
 - **Jonathan Giegold** (Computer Science MSc, Lund University)
 - **Biçem Kaya** (Architectural Design MSc, Istanbul Technical University)
